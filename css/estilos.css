@@ -1,0 +1,589 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-size: cover;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.75)
+    ),
+    url(../img/sit\ portada.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+/* boton empecemos ya */
+button {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 14px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 10px black;
+  color: white;
+  background-color: rgb(0, 200, 255, 0.542);
+  cursor: pointer;
+  transition: 1s;
+  
+}
+button:hover {
+  background-color: rgba(0, 200, 255);
+  transform: scale(1.2);
+}
+
+/* encabezado */
+
+header .container {
+  background-image: linear-gradient(rgb(18, 89, 103), black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+header a {
+  color: rgb(242, 242, 242);
+  padding: 15px;
+  margin: 2px;
+  text-decoration: none;
+}
+header a:hover {
+  color: rgb(0, 200, 255);
+}
+
+.logo {
+  color: white;
+  font-size: 40px;
+}
+
+/* banner principal */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 700px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(../img/SIT\ LOGO\ youtube.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  box-shadow: 2px 2px 10px black;
+}
+.hero h1 {
+  font-size: 80px;
+  color: white;
+  text-align: center;
+  padding-top: 150px;
+}
+
+h1{
+  animation: move 2s ease;
+}
+
+@keyframes move{
+  0%{
+    transform: translate(20%,0);
+  }
+}
+
+/* seccion de beats */
+
+.beats {
+  width: auto;
+  height: auto;
+  padding: 20px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.beats h2 {
+  background-color: rgba(23, 121, 146, 0.615);
+  color: white;
+  font-size: 30px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+h2{
+  animation: move 3s ease;
+}
+
+@keyframes move{
+  0%{
+    transform: translate(0,50%);
+  }
+}
+
+.beats img {
+  width: 350px;
+  height: 350px;
+  margin: 15px;
+  padding: 5px;
+  border: 2px solid rgb(210, 208, 208);
+}
+.beats p {
+  width: 350px;
+  height: auto;
+  margin: 2px;
+  padding: 20px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.405);
+  border-radius: 5px;
+  font-size: 18px;
+  font-style: italic;
+  text-align: center;
+}
+/* boton ir arriba */
+.botton-up{
+  width: 60px;
+  height: 60px;
+  /* background: rgba(0, 208, 255, 0.374); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 99;
+  cursor: pointer;
+  border: 4px solid transparent;
+  transition: all 500ms ease;
+
+}
+.botton-up:hover{
+  transform: scale(1.1);
+  border-color: rgba(0,0,0,0.1);
+}
+/* pie de pagina */
+
+.redesFooter a {
+  color: rgb(0, 0, 0);
+  display: inline;
+  align-items: center;
+  padding: 20px;
+  
+}
+.redesFooter img{
+  padding-top: 15px;
+  
+}
+footer {
+  width: auto;
+  height: 110px;
+  background-color: rgb(33, 109, 109);
+  display: block;
+  text-align: center;
+  align-items: baseline;
+}
+footer p {
+  padding: 15px;
+  font-size: 13px;
+  color: aliceblue;
+}
+footer span{
+  font-size: 15px;
+}
+
+/* Pagina librerias */
+
+.librerias {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  justify-content: space-around;
+}
+
+.imgLibre {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: auto;
+  height: auto;
+}
+
+.imgLibre a {
+  padding: 5px;
+  background-color: rgba(15, 75, 75, 0.747);
+  border: 1px solid white;
+  border-radius: 10px;
+  color: antiquewhite;
+  display: flex;
+  text-align: center;
+
+  text-decoration: none;
+}
+.imgLibre a:hover {
+  color: rgb(255, 1, 1);
+}
+
+.libText {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.libText h2 {
+  background-color: rgba(23, 121, 146, 0.615);
+  color: white;
+  font-size: 30px;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+/* Pagina Quien soy */
+
+.logRot{
+  
+  display: flex;
+  justify-content: center;
+}
+.logRot img{
+  margin: 70px;
+  width: 250px;
+  transition: 1s;
+}
+.logRot img:hover{
+  
+  transform: scale(1.3) rotate(360deg);
+  
+}
+.biografia{
+  color: rgb(255, 255, 255);
+  padding: 40px;
+  background-color: rgba(24, 129, 161, 0.167);
+  text-align: center;
+}
+.biografia p{
+  text-shadow: 2px 2px black;
+  
+}
+.botonQuien{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+.btnQuien {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 14px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 10px black;
+  color: white;
+  background-color: rgb(0, 200, 255,0.542);
+  transition: 1s;
+  }
+
+.btnQuien:hover {
+  background-color: rgba(0, 200, 255);
+  transform: scale(1.3);
+}
+/* pagina hablemos */
+
+.hablemos {
+  width: 400px;
+  padding: 25px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.701);
+  margin: auto;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  text-align: center;
+  border-radius: 4px;
+  animation: move 3s ease;
+}
+.text {
+  width: 300px;
+  height: 25px;
+  border-color: blue;
+  border-radius: 5px;
+}
+.text1 {
+  width: 300px;
+  height: 300px;
+  border-color: blue;
+  border-radius: 5px;
+}
+.hablemos p {
+  padding: 10px;
+  font-size: 17px;
+}
+.enviar1 {
+  width: 150px;
+  padding: 5px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  border: 1px solid red;
+}
+.enviar1 {
+  background: red;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 15px 0;
+  font: 16px;
+  cursor: pointer;
+}
+
+/* pagina registro */
+.registro {
+  color: white;
+  width: 400px;
+  background-color: rgba(2, 2, 2, 0.729);
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-radius: 4px;
+  animation: move 2s ease;
+}
+@keyframes move{
+  0%{
+    transform: translate(-60%,0);
+  }
+}
+.registro h4 {
+  font-size: 20px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.control {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  border: 1px solid blue;
+}
+.registro p {
+  height: 40px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.registro a:hover {
+  color: rgb(255, 1, 1);
+  text-decoration: underline;
+}
+.registro .boton {
+  width: 100%;
+  background: red;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 15px 0;
+  font: 16px;
+  cursor: pointer;
+}
+
+.registro1 {
+  color: rgb(255, 255, 255);
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.649);
+  padding: 30px 70px 30px 50px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+}
+.registro1 h4 {
+  font-size: 20px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.control1 {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  border: 1px solid blue;
+}
+.registro1 p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.registro1 .boton1 {
+  width: 100%;
+  background: red;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 15px 0;
+  font: 16px;
+  cursor: pointer;
+}
+.inicio1 {
+  width: 100%;
+  background-color: rgb(8, 8, 8);
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+
+
+@media (max-width: 932px){
+  header .logo{
+    font-size: 30px;
+  }
+  .librerias {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width:860px){
+  header .logo{
+    font-size: 25px;
+  }
+  .librerias {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 720px) {
+  header {
+    /* position: fixed; */
+    width: 100%;
+  }
+  header .container {
+    flex-direction: row;
+  }
+  header nav {
+    flex-direction: row;
+    padding-right: 20px;
+    
+  }
+  .hero{
+    background-size:cover;
+    background-position: center;
+  }
+  .librerias {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width:562px){
+  .hero{
+    background-size:cover;
+    background-position: center;
+  }
+  .hero h1{
+    font-size: 50px;
+  }
+  .beats img{
+    width: 250px;
+    height: 250px;
+  }
+  .botton-up{
+    width: 10px;
+    height: 10px;
+    right: 35px;
+  }
+  .librerias {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: space-around;
+  }
+  .imgLibre img{
+    width: 70%;
+  }
+  
+}
+
+
+@media (max-width:390px){
+  .hero h1{
+    font-size:35px ;
+  }
+  .hero{
+    
+    background-size: cover;
+    background-position: center;
+  }
+  .beats img{
+    width: 200px;
+    height: 200px;
+     
+  }
+  .botton-up{
+    width: 10px;
+    height: 10px;
+    right: 35px;
+  }
+  .beats p{
+    font-size: 15px;
+  }
+  .librerias {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: space-between;
+  }
+  .imgLibre img{
+    width: 80%;
+  }
+  .hablemos{
+    width: 80%;
+    
+  }
+  .text, .text1, .enviar1{
+    width: 80%;
+  }
+  .registro{
+    width: 80%;
+  }
+  .registro1{
+    width: 81%;
+  }
+}
